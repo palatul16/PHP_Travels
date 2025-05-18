@@ -13,8 +13,8 @@ An **end-to-end quality assurance project** for the **FlightSure Travel Booking 
 
 | Name            | Role                   | GitHub                                          | LinkedIn                                                                 |
 |-----------------|------------------------|--------------------------------------------------|--------------------------------------------------------------------------|
-| **Atul Pal**    | QA Project Lead        | [palatul16](https://github.com/palatul16)        | [Atul Pal](https://www.linkedin.com/in/atul-pal-451b13251/)             |
-| **Sanjay Jatav**| Lead Automation Tester | [sanjay-jatav](https://github.com/sanjay-jatav) | [Sanjay Jatav](https://www.linkedin.com/in/sanjay-jatav-8359182a8/)     |
+| **Atul Pal**    | QA Project Lead & Automation Tester       | [palatul16](https://github.com/palatul16)        | [Atul Pal](https://www.linkedin.com/in/atul-pal-451b13251/)             |
+| **Sanjay Jatav**| Automation & Manual Tester | [sanjay-jatav](https://github.com/sanjay-jatav) | [Sanjay Jatav](https://www.linkedin.com/in/sanjay-jatav-8359182a8/)     |
 
 ---
 
