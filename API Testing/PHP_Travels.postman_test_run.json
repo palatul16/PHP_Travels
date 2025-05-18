@@ -1,0 +1,699 @@
+{
+	"id": "339725c2-7e7b-4510-8f40-95e8adfeb9a7",
+	"name": "PHP_Travels",
+	"timestamp": "2025-05-18T07:17:02.477Z",
+	"collection_id": "44137305-55e9b8c9-b1d7-4935-9e22-4e8078e3963f",
+	"folder_id": 0,
+	"environment_id": "44137305-548ba3a7-a6b3-49cb-b82f-8fb57990e87c",
+	"totalPass": 50,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-05-18T07:16:51.986Z",
+	"totalFail": 6,
+	"results": [
+		{
+			"id": "3406c7a2-bd60-4a8a-81f5-9ff626f2bc83",
+			"name": "checkResponse",
+			"url": "https://awpturismo.com.br/api/app",
+			"time": 985,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": false,
+				"License key should not be null": true,
+				"Modules array is present and contains expected number of elements": false,
+				"Name and active fields in modules array should exist": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 0,
+					"fail": 1
+				},
+				"License key should not be null": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Modules array is present and contains expected number of elements": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Name and active fields in modules array should exist": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				985
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": false,
+					"License key should not be null": true,
+					"Modules array is present and contains expected number of elements": false,
+					"Name and active fields in modules array should exist": false
+				}
+			]
+		},
+		{
+			"id": "2af89a2c-8529-465b-8950-6c83f20c8679",
+			"name": "login",
+			"url": "https://awpturismo.com.br/api//login",
+			"time": 1478,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Data object should exist and be an object": true,
+				"Email is in a valid format": false,
+				"Status field is true": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data object should exist and be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status field is true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1478
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Data object should exist and be an object": true,
+					"Email is in a valid format": false,
+					"Status field is true": true
+				}
+			]
+		},
+		{
+			"id": "3106539b-1599-41d8-a40e-739209ca72a2",
+			"name": "signup",
+			"url": "https://awpturismo.com.br/api/signup",
+			"time": 374,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - status, message, and data": true,
+				"Status is a boolean value": true,
+				"Message is a non-empty string": true,
+				"Data is an empty string or null": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - status, message, and data": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a boolean value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an empty string or null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				374
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - status, message, and data": true,
+					"Status is a boolean value": true,
+					"Message is a non-empty string": true,
+					"Data is an empty string or null": true
+				}
+			]
+		},
+		{
+			"id": "d54eadfa-abb5-4f5d-a4f9-190e481e2581",
+			"name": "activation",
+			"url": "https://awpturismo.com.br/api/activation",
+			"time": 338,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - status, message, and data": true,
+				"Status is a boolean value": true,
+				"Message is a non-empty string": true,
+				"Data is an array": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - status, message, and data": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a boolean value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				338
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - status, message, and data": true,
+					"Status is a boolean value": true,
+					"Message is a non-empty string": true,
+					"Data is an array": true
+				}
+			]
+		},
+		{
+			"id": "f27f8d3c-da3f-4a25-9363-4f87dbcf0c5c",
+			"name": "flights_locations",
+			"url": "https://awpturismo.com.br/api/flights_locations?city=dxb",
+			"time": 362,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Id, late, and long are non-empty strings": true,
+				"Airport, city, and country are non-empty strings": true,
+				"Code is a non-empty string": true,
+				"Type is a valid type value": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, late, and long are non-empty strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Airport, city, and country are non-empty strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Code is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Type is a valid type value": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				362
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Id, late, and long are non-empty strings": true,
+					"Airport, city, and country are non-empty strings": true,
+					"Code is a non-empty string": true,
+					"Type is a valid type value": false
+				}
+			]
+		},
+		{
+			"id": "c1487687-8600-4af7-ba37-d6485d961db4",
+			"name": "search",
+			"url": "https://awpturismo.com.br/api/flights/search",
+			"time": 1621,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1621
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a26903d7-0225-4fc0-a362-d69df6f91323",
+			"name": "book",
+			"url": "https://awpturismo.com.br/api/flights/book",
+			"time": 540,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Response has the required fields - status, id, and booking_ref_no": true,
+				"Status is a boolean value": true,
+				"Id and booking_ref_no are non-empty strings": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - status, id, and booking_ref_no": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a boolean value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id and booking_ref_no are non-empty strings": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				540
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Response has the required fields - status, id, and booking_ref_no": true,
+					"Status is a boolean value": true,
+					"Id and booking_ref_no are non-empty strings": true
+				}
+			]
+		},
+		{
+			"id": "43c16a69-52f8-4942-b1cd-fd9d9ad2f0d8",
+			"name": "booking_update",
+			"url": "https://awpturismo.com.br/api/flights/booking_update",
+			"time": 309,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response has the required fields - status and response": true,
+				"Status is a boolean value": true,
+				"Content-Type header is application/json": true,
+				"Response should not be empty": true,
+				"Response time is within acceptable range": false
+			},
+			"testPassFailCounts": {
+				"Response has the required fields - status and response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a boolean value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should not be empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is within acceptable range": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				309
+			],
+			"allTests": [
+				{
+					"Response has the required fields - status and response": true,
+					"Status is a boolean value": true,
+					"Content-Type header is application/json": true,
+					"Response should not be empty": true,
+					"Response time is within acceptable range": false
+				}
+			]
+		},
+		{
+			"id": "37dbf02b-af4d-4e8b-b4a7-0aca1a44575a",
+			"name": "cancelllation",
+			"url": "https://awpturismo.com.br/api/flights/cancellation",
+			"time": 490,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				490
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "65c6c8c0-5ea3-45a5-bf42-3dc1160b90bf",
+			"name": "hotelLocations",
+			"url": "https://awpturismo.com.br/api/hotels_locations?city=lah",
+			"time": 318,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Latitude and longitude are in valid format": true,
+				"City is not an empty string": true,
+				"Country code is in ISO 3166-1 alpha-2 format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Latitude and longitude are in valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"City is not an empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Country code is in ISO 3166-1 alpha-2 format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				318
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Latitude and longitude are in valid format": true,
+					"City is not an empty string": true,
+					"Country code is in ISO 3166-1 alpha-2 format": true
+				}
+			]
+		},
+		{
+			"id": "07a6a579-cb7e-430d-b505-5450475af969",
+			"name": "search",
+			"url": "https://awpturismo.com.br/api/hotel_search",
+			"time": 890,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Status field is present in the response": true,
+				"Response field is an object": true,
+				"Total field is empty or null": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status field is present in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response field is an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Total field is empty or null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				890
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Status field is present in the response": true,
+					"Response field is an object": true,
+					"Total field is empty or null": true
+				}
+			]
+		},
+		{
+			"id": "e79714f1-46d1-454f-9bf1-1219eab92e4a",
+			"name": "details",
+			"url": "https://awpturismo.com.br/api/hotel_details",
+			"time": 538,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				538
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "26bd674a-2e89-47a2-b27a-000fc4e640f3",
+			"name": "hotel_booking",
+			"url": "https://awpturismo.com.br/api/hotel_booking",
+			"time": 524,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - status, id, and booking_ref_no": true,
+				"ID should be a non-empty string": true,
+				"Booking_ref_no is a non-empty string": true,
+				"Content-Type header is application/json": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - status, id, and booking_ref_no": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Booking_ref_no is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				524
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - status, id, and booking_ref_no": true,
+					"ID should be a non-empty string": true,
+					"Booking_ref_no is a non-empty string": true,
+					"Content-Type header is application/json": true
+				}
+			]
+		},
+		{
+			"id": "f14d6712-7dd8-4860-88f7-3a5d67308efe",
+			"name": "cancellation",
+			"url": "https://awpturismo.com.br/api/hotels_cancellation",
+			"time": 297,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 404": true,
+				"Response has the required fields - status and message": true,
+				"Status is a non-empty string": true,
+				"Message is a non-empty string": true,
+				"Content type is application/json": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - status and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content type is application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				297
+			],
+			"allTests": [
+				{
+					"Response status code is 404": true,
+					"Response has the required fields - status and message": true,
+					"Status is a non-empty string": true,
+					"Message is a non-empty string": true,
+					"Content type is application/json": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 9064,
+	"collection": {
+		"requests": [
+			{
+				"id": "3406c7a2-bd60-4a8a-81f5-9ff626f2bc83",
+				"method": "POST"
+			},
+			{
+				"id": "2af89a2c-8529-465b-8950-6c83f20c8679",
+				"method": "POST"
+			},
+			{
+				"id": "3106539b-1599-41d8-a40e-739209ca72a2",
+				"method": "POST"
+			},
+			{
+				"id": "d54eadfa-abb5-4f5d-a4f9-190e481e2581",
+				"method": "POST"
+			},
+			{
+				"id": "f27f8d3c-da3f-4a25-9363-4f87dbcf0c5c",
+				"method": "GET"
+			},
+			{
+				"id": "c1487687-8600-4af7-ba37-d6485d961db4",
+				"method": "POST"
+			},
+			{
+				"id": "a26903d7-0225-4fc0-a362-d69df6f91323",
+				"method": "POST"
+			},
+			{
+				"id": "43c16a69-52f8-4942-b1cd-fd9d9ad2f0d8",
+				"method": "POST"
+			},
+			{
+				"id": "37dbf02b-af4d-4e8b-b4a7-0aca1a44575a",
+				"method": "POST"
+			},
+			{
+				"id": "65c6c8c0-5ea3-45a5-bf42-3dc1160b90bf",
+				"method": "GET"
+			},
+			{
+				"id": "07a6a579-cb7e-430d-b505-5450475af969",
+				"method": "POST"
+			},
+			{
+				"id": "e79714f1-46d1-454f-9bf1-1219eab92e4a",
+				"method": "POST"
+			},
+			{
+				"id": "26bd674a-2e89-47a2-b27a-000fc4e640f3",
+				"method": "POST"
+			},
+			{
+				"id": "f14d6712-7dd8-4860-88f7-3a5d67308efe",
+				"method": "POST"
+			}
+		]
+	}
+}

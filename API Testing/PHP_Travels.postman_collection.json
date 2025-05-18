@@ -1,0 +1,1044 @@
+{
+	"info": {
+		"_postman_id": "55e9b8c9-b1d7-4935-9e22-4e8078e3963f",
+		"name": "PHP_Travels",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44137305",
+		"_collection_link": "https://atulpal-9061412.postman.co/workspace/3e783364-fa0a-4618-8727-9d363bd5272a/collection/44137305-55e9b8c9-b1d7-4935-9e22-4e8078e3963f?action=share&source=collection_link&creator=44137305"
+	},
+	"item": [
+		{
+			"name": "appResponse",
+			"item": [
+				{
+					"name": "checkResponse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "api_key001",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "usd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://awpturismo.com.br/api/app",
+							"protocol": "https",
+							"host": [
+								"awpturismo",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"app"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "app",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "api_key",
+											"value": "api_key001",
+											"type": "text"
+										},
+										{
+											"key": "language",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "currency",
+											"value": "usd",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}app",
+									"host": [
+										"{{api_url}}app"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 09 Aug 2023 23:35:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"app main response\",\n    \"data\": {\n        \"app\": {\n            \"id\": 1,\n            \"user_id\": \"2023031105102799\",\n            \"api_secret_key\": \"\",\n            \"business_name\": \"PHPTRAVELS\",\n            \"home_title\": \"PHPTRAVELS\",\n            \"site_url\": \"https://phptravels.net\",\n            \"tag_line\": null,\n            \"address\": \"1355 Market St, Suite 900 San Francisco, United States\",\n            \"map_address\": \"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13607.356610977176!2d74.33246765015716!3d31.501104731403522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190519496f773f%3A0x604b255523e76942!2sphptravels!5e0!3m2!1sen!2s!4v1685517501961!5m2!1sen!2s\",\n            \"seo_status\": 1,\n            \"meta_description\": \"PHPTRAVELS Homepage\",\n            \"header_logo_img\": \"logo.png\",\n            \"favicon_img\": \"favicon.png\",\n            \"javascript\": \"JS code goes here\",\n            \"reviews\": \"Yes\",\n            \"multi_language\": \"1\",\n            \"license_key\": \"PHPTRAVELSPRODUCTLICENSEKEY\",\n            \"default_theme\": \"#1e49da\",\n            \"theme_name\": \"default\",\n            \"offline_message\": \"Our website is currently offline\",\n            \"site_offline\": 0,\n            \"default_gateway\": \"AuthorizeNet_AIM\",\n            \"multi_currency\": \"1\",\n            \"booking_expiry\": 1,\n            \"booking_cancellation\": 1,\n            \"user_registration\": \"1\",\n            \"supplier_registration\": \"0\",\n            \"agent_registration\": \"0\",\n            \"guest_booking\": \"0\",\n            \"social_facebook\": \"https://facebook.com/phptravels\",\n            \"social_twitter\": \"https://twitter.com/phptravels\",\n            \"social_linkedin\": \"https://twitter.com/phptravels\",\n            \"social_instagram\": \"https://instagram.com/phptravels\",\n            \"social_google\": \"https://google.com/phptravels\",\n            \"social_whatsapp\": \"https://whatsapp.com/phptravels\",\n            \"social_youtube\": \"https://youtube.com/phptravels\",\n            \"email_api_key\": \"api-82F4F240FF3511ECA2B4F23C91C88F4E\",\n            \"email_sender_name\": \"PHPTRAVELS\",\n            \"email_sender_email\": \"noreply@phptravels.net\",\n            \"contact_email\": \"email@agency.com\",\n            \"contact_phone\": \"+123456789\",\n            \"version\": \"v9.0\"\n        },\n        \"modules\": [\n            {\n                \"id\": 1,\n                \"name\": \"flights\",\n                \"active\": \"1\",\n                \"type\": \"flights\",\n                \"status\": \"1\",\n                \"c1\": \"\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": \"\",\n                \"c6\": \"\",\n                \"dev_mode\": \"\",\n                \"payment_mode\": \"\",\n                \"currency\": \"\",\n                \"module_color\": \"#000000\",\n                \"order\": 1,\n                \"prn_type\": \"0\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"hotels\",\n                \"active\": \"1\",\n                \"type\": \"hotels\",\n                \"status\": \"1\",\n                \"c1\": \"\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": \"\",\n                \"c6\": \"\",\n                \"dev_mode\": \"\",\n                \"payment_mode\": \"\",\n                \"currency\": \"\",\n                \"module_color\": \"#000000\",\n                \"order\": 2,\n                \"prn_type\": \"0\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"tours\",\n                \"active\": \"1\",\n                \"type\": \"tours\",\n                \"status\": \"1\",\n                \"c1\": \"\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": null,\n                \"c6\": null,\n                \"dev_mode\": \"0\",\n                \"payment_mode\": \"0\",\n                \"currency\": \"USD\",\n                \"module_color\": \"#000000\",\n                \"order\": 3,\n                \"prn_type\": \"0\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"cars\",\n                \"active\": \"1\",\n                \"type\": \"cars\",\n                \"status\": \"1\",\n                \"c1\": \"\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": null,\n                \"c6\": null,\n                \"dev_mode\": \"0\",\n                \"payment_mode\": \"0\",\n                \"currency\": \"USD\",\n                \"module_color\": \"#000000\",\n                \"order\": 4,\n                \"prn_type\": \"0\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"duffel\",\n                \"active\": \"1\",\n                \"type\": \"flights\",\n                \"status\": \"1\",\n                \"c1\": \"duffel_live_R8yD0ueRg3cEdZPPD3xSOn9pKVImjop8_S0KX4jnWpL\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": \"\",\n                \"c6\": \"\",\n                \"dev_mode\": \"1\",\n                \"payment_mode\": \"1\",\n                \"currency\": \"USD\",\n                \"module_color\": \"#d03e54\",\n                \"order\": 9,\n                \"prn_type\": \"0\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"viator\",\n                \"active\": \"1\",\n                \"type\": \"tours\",\n                \"status\": \"1\",\n                \"c1\": \"cd7229f3-194e-4e5b-80d4-b2804f05f7f6\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": \"\",\n                \"c6\": \"\",\n                \"dev_mode\": \"0\",\n                \"payment_mode\": \"0\",\n                \"currency\": \"USD\",\n                \"module_color\": \"#0098a3\",\n                \"order\": 11,\n                \"prn_type\": \"0\"\n            },\n            {\n                \"id\": 16,\n                \"name\": \"hotelbeds\",\n                \"active\": \"1\",\n                \"type\": \"hotels\",\n                \"status\": \"1\",\n                \"c1\": \"1e83c000f3\",\n                \"c2\": \"531c46fc346c6729b9e9094f65abef70\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": \"\",\n                \"c6\": \"\",\n                \"dev_mode\": \"0\",\n                \"payment_mode\": \"0\",\n                \"currency\": \"USD\",\n                \"module_color\": \"#012b7e\",\n                \"order\": 6,\n                \"prn_type\": \"0\"\n            },\n            {\n                \"id\": 18,\n                \"name\": \"blog\",\n                \"active\": \"1\",\n                \"type\": \"extra\",\n                \"status\": \"1\",\n                \"c1\": \"\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": \"\",\n                \"c6\": \"\",\n                \"dev_mode\": \"0\",\n                \"payment_mode\": \"0\",\n                \"currency\": \"USD\",\n                \"module_color\": \"#000000\",\n                \"order\": 12,\n                \"prn_type\": \"0\"\n            }\n        ],\n        \"currencies\": [\n            {\n                \"nicename\": \"Saudi Arabia\",\n                \"name\": \"SAR\",\n                \"default\": \"\",\n                \"status\": \"1\",\n                \"iso\": \"SA\"\n            },\n            {\n                \"nicename\": \"United Kingdom\",\n                \"name\": \"GBP\",\n                \"default\": \"\",\n                \"status\": \"1\",\n                \"iso\": \"GB\"\n            },\n            {\n                \"nicename\": \"United States\",\n                \"name\": \"USD\",\n                \"default\": \"1\",\n                \"status\": \"1\",\n                \"iso\": \"US\"\n            }\n        ],\n        \"languages\": [\n            {\n                \"id\": 1,\n                \"status\": \"1\",\n                \"default\": \"1\",\n                \"name\": \"English\",\n                \"type\": \"LTR\",\n                \"country_id\": \"US\",\n                \"language_code\": \"en\"\n            },\n            {\n                \"id\": 2,\n                \"status\": \"1\",\n                \"default\": \"\",\n                \"name\": \"Arabic\",\n                \"type\": \"RTL\",\n                \"country_id\": \"SA\",\n                \"language_code\": \"ar\"\n            },\n            {\n                \"id\": 9,\n                \"status\": \"1\",\n                \"default\": \"0\",\n                \"name\": \"Turkish\",\n                \"type\": \"LTR\",\n                \"country_id\": \"TR\",\n                \"language_code\": \"tr\"\n            },\n            {\n                \"id\": 10,\n                \"status\": \"1\",\n                \"default\": \"0\",\n                \"name\": \"Russian\",\n                \"type\": \"LTR\",\n                \"country_id\": \"RU\",\n                \"language_code\": \"ru\"\n            },\n            {\n                \"id\": 11,\n                \"status\": \"1\",\n                \"default\": \"0\",\n                \"name\": \"French\",\n                \"type\": \"LTR\",\n                \"country_id\": \"FR\",\n                \"language_code\": \"fr\"\n            },\n            {\n                \"id\": 12,\n                \"status\": \"1\",\n                \"default\": \"0\",\n                \"name\": \"Chinese\",\n                \"type\": \"LTR\",\n                \"country_id\": \"CN\",\n                \"language_code\": \"ch\"\n            },\n            {\n                \"id\": 13,\n                \"status\": \"1\",\n                \"default\": \"0\",\n                \"name\": \"Germany\",\n                \"type\": \"LTR\",\n                \"country_id\": \"DE\",\n                \"language_code\": \"ge\"\n            }\n        ],\n        \"featured_hotels\": [\n            {\n                \"id\": 2,\n                \"city\": \"Dubai\",\n                \"country\": \"United Arab Emirates\",\n                \"name\": \"Movenpick Grand Al Bustan\",\n                \"img\": \"184028-28-01-2023-1674874284.jpg\",\n                \"location\": \"Dubai\",\n                \"stars\": \"5\",\n                \"status\": \"1\",\n                \"price\": \"100.00\"\n            },\n            {\n                \"id\": 3,\n                \"city\": \"Dubai\",\n                \"country\": \"United Arab Emirates\",\n                \"name\": \"Four Points by Sheraton Bur Dubai\",\n                \"img\": \"182171-28-01-2023-1674874525.jpg\",\n                \"location\": \"Dubai\",\n                \"stars\": \"4\",\n                \"status\": \"1\",\n                \"price\": \"260.00\"\n            },\n            {\n                \"id\": 4,\n                \"city\": \"Dubai\",\n                \"country\": \"United Arab Emirates\",\n                \"name\": \"Voco Dubai an IHG Hotel\",\n                \"img\": \"699345-28-01-2023-1674874904.jpg\",\n                \"location\": \"Dubai\",\n                \"stars\": \"5\",\n                \"status\": \"1\",\n                \"price\": \"200.00\"\n            },\n            {\n                \"id\": 5,\n                \"city\": \"Dubai\",\n                \"country\": \"United Arab Emirates\",\n                \"name\": \"Grand Mercure Hotel and Residences Dubai Airport\",\n                \"img\": \"213091-28-01-2023-1674875148.jpg\",\n                \"location\": \"Dubai\",\n                \"stars\": \"5\",\n                \"status\": \"1\",\n                \"price\": \"200.00\"\n            },\n            {\n                \"id\": 6,\n                \"city\": \"Dubai\",\n                \"country\": \"United Arab Emirates\",\n                \"name\": \"Millennium Airport Hotel Dubai\",\n                \"img\": \"885328-28-01-2023-1674934935.webp\",\n                \"location\": \"Dubai\",\n                \"stars\": \"4\",\n                \"status\": \"1\",\n                \"price\": \"150.00\"\n            },\n            {\n                \"id\": 7,\n                \"city\": \"Dubai\",\n                \"country\": \"United Arab Emirates\",\n                \"name\": \"Armani Hotel Dubai\",\n                \"img\": \"304297-29-01-2023-1675019782.jpg\",\n                \"location\": \"Dubai\",\n                \"stars\": \"3\",\n                \"status\": \"1\",\n                \"price\": \"200.00\"\n            }\n        ],\n        \"featured_tours\": [\n            {\n                \"id\": 24,\n                \"basic_price\": 400,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"tours\",\n                \"name\": \"Dubai & the Desert - Dubai Combo Package\",\n                \"img\": \"2wej34l4ecysk80cow.jpg\",\n                \"location\": \"Dubai\",\n                \"stars\": 5,\n                \"status\": \"1\",\n                \"price\": \"400.00\"\n            },\n            {\n                \"id\": 26,\n                \"basic_price\": 105,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"tours\",\n                \"name\": \"Stunning Dubai\",\n                \"img\": \"b8ylvzbv98o4gsocgo.jpg\",\n                \"location\": \"Dubai\",\n                \"stars\": 5,\n                \"status\": \"1\",\n                \"price\": \"105.00\"\n            },\n            {\n                \"id\": 32,\n                \"basic_price\": 46,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"tours\",\n                \"name\": \"Sydney and Bondi Beach Explorer\",\n                \"img\": \"1o1q3hx9w6tcsocok4.jpg\",\n                \"location\": \"Sydney\",\n                \"stars\": 3,\n                \"status\": \"1\",\n                \"price\": \"46.00\"\n            },\n            {\n                \"id\": 35,\n                \"basic_price\": 860,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"tours\",\n                \"name\": \"6 Days Around Thailand\",\n                \"img\": \"1thwd9jdp9r4o4w0oc.jpg\",\n                \"location\": \"Thailand\",\n                \"stars\": 3,\n                \"status\": \"1\",\n                \"price\": \"860.00\"\n            },\n            {\n                \"id\": 36,\n                \"basic_price\": 282,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"tours\",\n                \"name\": \"Spectaculars Of The Nile 3 Nights\",\n                \"img\": \"e9rktmd2lzc488ok4g.jpg\",\n                \"location\": \"Nile Egypt\",\n                \"stars\": 4,\n                \"status\": \"1\",\n                \"price\": \"282.00\"\n            }\n        ],\n        \"featured_cars\": [\n            {\n                \"id\": 3,\n                \"cars_price\": 150,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"cars\",\n                \"currency\": \"USD\",\n                \"name\": \"Hyundai i10 or similar\",\n                \"img\": \"58mw99nsyz48w084g.png\",\n                \"location\": \"DXB\",\n                \"stars\": 4,\n                \"status\": \"1\",\n                \"price\": \"150.00\"\n            },\n            {\n                \"id\": 5,\n                \"cars_price\": 250,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"cars\",\n                \"currency\": \"USD\",\n                \"name\": \"Nisan Micra 2021\",\n                \"img\": \"2qmo723wwoowkss00s.jpg\",\n                \"location\": \"DXB\",\n                \"stars\": 3,\n                \"status\": \"1\",\n                \"price\": \"250.00\"\n            },\n            {\n                \"id\": 6,\n                \"cars_price\": 120,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"cars\",\n                \"currency\": \"USD\",\n                \"name\": \"Kia Pacanto 2020\",\n                \"img\": \"uibg0ajgco0g0ww840.png\",\n                \"location\": \"DXB\",\n                \"stars\": 3,\n                \"status\": \"1\",\n                \"price\": \"120.00\"\n            },\n            {\n                \"id\": 7,\n                \"cars_price\": 80,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"cars\",\n                \"currency\": \"USD\",\n                \"name\": \"Opel Corsa 2023\",\n                \"img\": \"50i5m3uduls8oc80c.jpg\",\n                \"location\": \"DXB\",\n                \"stars\": 5,\n                \"status\": \"1\",\n                \"price\": \"80.00\"\n            },\n            {\n                \"id\": 8,\n                \"cars_price\": 100,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"cars\",\n                \"currency\": \"USD\",\n                \"name\": \"Ford Focus 2023\",\n                \"img\": \"6820y55p8tssw80co.png\",\n                \"location\": \"DXB\",\n                \"stars\": 5,\n                \"status\": \"1\",\n                \"price\": \"100.00\"\n            },\n            {\n                \"id\": 9,\n                \"cars_price\": 180,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"cars\",\n                \"currency\": \"USD\",\n                \"name\": \"Ford Mondeo 2020\",\n                \"img\": \"kflrm78sj404kkk0w.jpeg\",\n                \"location\": \"DXB\",\n                \"stars\": 1,\n                \"status\": \"1\",\n                \"price\": \"180.00\"\n            },\n            {\n                \"id\": 10,\n                \"cars_price\": 85,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"cars\",\n                \"currency\": \"USD\",\n                \"name\": \"Opel Astra 2022\",\n                \"img\": \"38u6d6s2g0e80so80g.jpg\",\n                \"location\": \"DXB\",\n                \"stars\": 4,\n                \"status\": \"1\",\n                \"price\": \"85.00\"\n            },\n            {\n                \"id\": 11,\n                \"cars_price\": 120,\n                \"adult\": 2,\n                \"child\": 0,\n                \"infants\": 0,\n                \"supplier\": \"cars\",\n                \"currency\": \"USD\",\n                \"name\": \"Toyota Camry 2023 full options\",\n                \"img\": \"uwps0eeblus4ws4ooo.jpg\",\n                \"location\": \"DXB\",\n                \"stars\": 3,\n                \"status\": \"1\",\n                \"price\": \"120.00\"\n            }\n        ],\n        \"hotels_suggestions\": [\n            {\n                \"country\": \"United Arab Emirates\",\n                \"id\": 9404,\n                \"city\": \"Dubai\",\n                \"status\": \"1\",\n                \"order\": 6\n            },\n            {\n                \"country\": \"Thailand\",\n                \"id\": 2422,\n                \"city\": \"Phuket\",\n                \"status\": \"1\",\n                \"order\": 5\n            },\n            {\n                \"country\": \"Malaysia\",\n                \"id\": 3409,\n                \"city\": \"Kuala Lumpur\",\n                \"status\": \"1\",\n                \"order\": 4\n            },\n            {\n                \"country\": \"India\",\n                \"id\": 13,\n                \"city\": \"Delhi\",\n                \"status\": \"1\",\n                \"order\": 3\n            },\n            {\n                \"country\": \"Singapore\",\n                \"id\": 4,\n                \"city\": \"Singapore\",\n                \"status\": \"1\",\n                \"order\": 2\n            },\n            {\n                \"country\": \"Saudi Arabia\",\n                \"id\": 2802,\n                \"city\": \"Jeddah\",\n                \"status\": \"1\",\n                \"order\": 1\n            }\n        ],\n        \"cars_suggestions\": [\n            {\n                \"country\": \"United States\",\n                \"airport\": \"John F Kennedy International Airport\",\n                \"city\": \"New York\",\n                \"city_airport\": \"JFK\",\n                \"status\": \"1\"\n            },\n            {\n                \"country\": \"India\",\n                \"airport\": \"Indira Gandhi International Airport\",\n                \"city\": \"Delhi\",\n                \"city_airport\": \"DEL\",\n                \"status\": \"1\"\n            },\n            {\n                \"country\": \"Turkey\",\n                \"airport\": \"Istanbul Airport\",\n                \"city\": \"Istanbul\",\n                \"city_airport\": \"IST\",\n                \"status\": \"1\"\n            },\n            {\n                \"country\": \"United Arab Emirates\",\n                \"airport\": \"Dubai International Airport\",\n                \"city\": \"Dubai\",\n                \"city_airport\": \"DXB\",\n                \"status\": \"1\"\n            },\n            {\n                \"country\": \"Philippines\",\n                \"airport\": \"Ninoy Aquino International Airport\",\n                \"city\": \"Manila\",\n                \"city_airport\": \"MNL\",\n                \"status\": \"1\"\n            },\n            {\n                \"country\": \"Germany\",\n                \"airport\": \"Berlin Brandenburg Willy Brandt\",\n                \"city\": \"Berlin\",\n                \"city_airport\": \"BER\",\n                \"status\": \"1\"\n            },\n            {\n                \"country\": \"Saudi Arabia\",\n                \"airport\": \"King Abdulaziz International Airport\",\n                \"city\": \"Jeddah\",\n                \"city_airport\": \"JED\",\n                \"status\": \"1\"\n            },\n            {\n                \"country\": \"Pakistan\",\n                \"airport\": \"Alama Iqbal International Airport\",\n                \"city\": \"Lahore\",\n                \"city_airport\": \"LHE\",\n                \"status\": \"1\"\n            }\n        ],\n        \"tours_suggestions\": [\n            {\n                \"country\": \"Thailand\",\n                \"id\": 11,\n                \"city\": \"Thailand\",\n                \"status\": \"1\",\n                \"order\": 2\n            },\n            {\n                \"country\": \"United Arab Emirates\",\n                \"id\": 9404,\n                \"city\": \"Dubai\",\n                \"status\": \"1\",\n                \"order\": 1\n            }\n        ],\n        \"featured_flights\": [\n            {\n                \"id\": 5,\n                \"origin_code\": \"MUX\",\n                \"origin\": \"Multan\",\n                \"destination_code\": \"JED\",\n                \"destination\": \"Jeddah\",\n                \"price\": \"385.00\",\n                \"airline_name\": \"Pakistan International Airlines\",\n                \"airline\": \"PK\"\n            },\n            {\n                \"id\": 1,\n                \"origin_code\": \"LHE\",\n                \"origin\": \"Lahore\",\n                \"destination_code\": \"DXB\",\n                \"destination\": \"Dubai\",\n                \"price\": \"100.00\",\n                \"airline_name\": \"Pakistan International Airlines\",\n                \"airline\": \"PK\"\n            },\n            {\n                \"id\": 8,\n                \"origin_code\": \"MNL\",\n                \"origin\": \"Manila\",\n                \"destination_code\": \"DXB\",\n                \"destination\": \"Dubai\",\n                \"price\": \"450.00\",\n                \"airline_name\": \"Air Philippines\",\n                \"airline\": \"2P\"\n            },\n            {\n                \"id\": 2,\n                \"origin_code\": \"KUL\",\n                \"origin\": \"Kuala Lumpur\",\n                \"destination_code\": \"DXB\",\n                \"destination\": \"Dubai\",\n                \"price\": \"620.00\",\n                \"airline_name\": \"Malaysia Airlines\",\n                \"airline\": \"MH\"\n            },\n            {\n                \"id\": 4,\n                \"origin_code\": \"DXB\",\n                \"origin\": \"Dubai\",\n                \"destination_code\": \"SHJ\",\n                \"destination\": \"Sharjah\",\n                \"price\": \"460.00\",\n                \"airline_name\": \"Emirates\",\n                \"airline\": \"EK\"\n            },\n            {\n                \"id\": 7,\n                \"origin_code\": \"DEL\",\n                \"origin\": \"Delhi\",\n                \"destination_code\": \"SVO\",\n                \"destination\": \"Moscow\",\n                \"price\": \"760.00\",\n                \"airline_name\": \"Air India Limited\",\n                \"airline\": \"AI\"\n            },\n            {\n                \"id\": 9,\n                \"origin_code\": \"SUB\",\n                \"origin\": \"Surabaya\",\n                \"destination_code\": \"JFK\",\n                \"destination\": \"New York\",\n                \"price\": \"800.00\",\n                \"airline_name\": \"American Airlines\",\n                \"airline\": \"AA\"\n            },\n            {\n                \"id\": 3,\n                \"origin_code\": \"BER\",\n                \"origin\": \"Berlin\",\n                \"destination_code\": \"IST\",\n                \"destination\": \"Istanbul\",\n                \"price\": \"600.00\",\n                \"airline_name\": \"Turkish Airlines\",\n                \"airline\": \"TK\"\n            }\n        ],\n        \"flights_suggestions\": [\n            {\n                \"country\": \"Saudi Arabia\",\n                \"airport\": \"King Abdulaziz International Airport\",\n                \"city\": \"Jeddah\",\n                \"city_airport\": \"JED\",\n                \"type\": \"from_destination\"\n            },\n            {\n                \"country\": \"United Arab Emirates\",\n                \"airport\": \"Dubai International Airport\",\n                \"city\": \"Dubai\",\n                \"city_airport\": \"DXB\",\n                \"type\": \"to_destination\"\n            },\n            {\n                \"country\": \"Pakistan\",\n                \"airport\": \"Alama Iqbal International Airport\",\n                \"city\": \"Lahore\",\n                \"city_airport\": \"LHE\",\n                \"type\": \"from_destination\"\n            },\n            {\n                \"country\": \"Philippines\",\n                \"airport\": \"Ninoy Aquino International Airport\",\n                \"city\": \"Manila\",\n                \"city_airport\": \"MNL\",\n                \"type\": \"from_destination\"\n            },\n            {\n                \"country\": \"India\",\n                \"airport\": \"Indira Gandhi International Airport\",\n                \"city\": \"Delhi\",\n                \"city_airport\": \"DEL\",\n                \"type\": \"to_destination\"\n            },\n            {\n                \"country\": \"United States\",\n                \"airport\": \"John F Kennedy International Airport\",\n                \"city\": \"New York\",\n                \"city_airport\": \"JFK\",\n                \"type\": \"to_destination\"\n            },\n            {\n                \"country\": \"Germany\",\n                \"airport\": \"Berlin Brandenburg Willy Brandt\",\n                \"city\": \"Berlin\",\n                \"city_airport\": \"BER\",\n                \"type\": \"from_destination\"\n            },\n            {\n                \"country\": \"Turkey\",\n                \"airport\": \"Istanbul Airport\",\n                \"city\": \"Istanbul\",\n                \"city_airport\": \"IST\",\n                \"type\": \"to_destination\"\n            }\n        ],\n        \"payment_gateways\": [\n            {\n                \"id\": 3,\n                \"name\": \"PayPal\",\n                \"c1\": \"Aex17xSniK7YjqZld6UDO2x_LzLlwJCa_kTLgzJ6OpjOG3S9F_Pesry7yiDP0v4CY_hobUnEPYWflmZv\",\n                \"c2\": \"\",\n                \"c3\": \"sb-itxir5994130@personal.example.com\",\n                \"c4\": \"testpayment\",\n                \"c5\": \"Password : testpayment\",\n                \"dev_mode\": \"1\",\n                \"status\": 1,\n                \"order\": 4,\n                \"default\": \"1\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Bank Transfer\",\n                \"c1\": \"Account holder Elon Musk\",\n                \"c2\": \"Routing number  084009519\",\n                \"c3\": \"Account number 9600001474383599\",\n                \"c4\": \"Bank Wise 30 W. 26th Street, Sixth Floor New York NY 10010 United States\",\n                \"c5\": \"IBAN GBPXXXIP0024456987\",\n                \"dev_mode\": \"1\",\n                \"status\": 1,\n                \"order\": 1,\n                \"default\": \"1\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Pay Later\",\n                \"c1\": \"\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": null,\n                \"dev_mode\": \"0\",\n                \"status\": 1,\n                \"order\": 2,\n                \"default\": \"1\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Stripe\",\n                \"c1\": \"pk_test_8AC8l99Oese5uC8AChEM1mfD003RlIODfs\",\n                \"c2\": \"sk_test_6y6kAEPbpqwiim0lQLD2xrV900uTveaS9e\",\n                \"c3\": \"4242 4242 4242 4242\",\n                \"c4\": \"12/34 - CVC 123\",\n                \"c5\": \"Any date and CVV code\",\n                \"dev_mode\": \"1\",\n                \"status\": 1,\n                \"order\": 5,\n                \"default\": \"1\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Wallet Balance\",\n                \"c1\": \"\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": null,\n                \"dev_mode\": \"0\",\n                \"status\": 1,\n                \"order\": 3,\n                \"default\": \"1\"\n            },\n            {\n                \"id\": 14,\n                \"name\": \"duffel\",\n                \"c1\": \"duffel_test_MNLhm9PZGaaXD2-fvDiN8sDph5FBmuPkQMvUzFutyL4\",\n                \"c2\": \"\",\n                \"c3\": \"\",\n                \"c4\": \"\",\n                \"c5\": null,\n                \"dev_mode\": \"1\",\n                \"status\": 1,\n                \"order\": 4,\n                \"default\": \"1\"\n            }\n        ],\n        \"cms\": [\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"About us\",\n                \"slug_url\": \"about-us\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"Contact us\",\n                \"slug_url\": \"contact-us\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"Terms of Use\",\n                \"slug_url\": \"terms-of-use\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"Cookies Policy\",\n                \"slug_url\": \"cookies-policy\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"Privacy Policy\",\n                \"slug_url\": \"privacy-policy\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"Become a Supplier\",\n                \"slug_url\": \"become-a-supplier\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"FAQ\",\n                \"slug_url\": \"faq\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"Booking Tips\",\n                \"slug_url\": \"booking-tips\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"File a Claim\",\n                \"slug_url\": \"file-a-claim\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"Careers and Jobs\",\n                \"slug_url\": \"careers-and-jobs\"\n            },\n            {\n                \"name\": \"Footer\",\n                \"page_name\": \"How to Book\",\n                \"slug_url\": \"how-to-book\"\n            }\n        ],\n        \"featured_blog\": [\n            {\n                \"post_title\": \"Virgin Gorda beaches and lobste\",\n                \"post_slug\": \"Virgin-Gorda-beaches-and-lobste\",\n                \"post_img\": \"780975_1.jpg\",\n                \"id\": 35\n            },\n            {\n                \"post_title\": \"Fiercely Independent Cultures\",\n                \"post_slug\": \"Fiercely-Independent-Cultures\",\n                \"post_img\": \"696228_2.jpg\",\n                \"id\": 34\n            },\n            {\n                \"post_title\": \"Peace Train A Long Time Coming\",\n                \"post_slug\": \"Peace-Train-A-Long-Time-Coming\",\n                \"post_img\": \"120331_3.jpg\",\n                \"id\": 33\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login_signup",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user@phptravels.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "demouser",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}/login",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "demo",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "phone_country_code",
+									"value": "186",
+									"description": "Country ID get it from countries API",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "compoxition@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "demouser",
+									"type": "text"
+								},
+								{
+									"key": "user_type",
+									"value": "agent",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}signup",
+							"host": [
+								"{{api_url}}signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "20230219013117100",
+									"type": "text"
+								},
+								{
+									"key": "email_code",
+									"value": "825907",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}activation",
+							"host": [
+								"{{api_url}}activation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "flightsBooking",
+			"item": [
+				{
+					"name": "flights_locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}flights_locations?city=dxb",
+							"host": [
+								"{{api_url}}flights_locations"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "dxb"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "origin",
+									"value": "IST",
+									"type": "text"
+								},
+								{
+									"key": "destination",
+									"value": "DXB",
+									"type": "text"
+								},
+								{
+									"key": "departure_date",
+									"value": "02-07-2024",
+									"type": "text"
+								},
+								{
+									"key": "return_date",
+									"value": "02-12-2023",
+									"type": "text"
+								},
+								{
+									"key": "adults",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "children",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "infants",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "class_type",
+									"value": "economy",
+									"description": "economy | economy_premium | business | vip",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "oneway",
+									"description": "oneway | return",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "usd",
+									"type": "text"
+								},
+								{
+									"key": "ip",
+									"value": "1.1.1.1",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}flights/search",
+							"host": [
+								"{{api_url}}flights"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "module_type",
+									"value": "flights",
+									"type": "text"
+								},
+								{
+									"key": "price_original",
+									"value": "242",
+									"type": "text"
+								},
+								{
+									"key": "price_markup",
+									"value": "200.86",
+									"type": "text"
+								},
+								{
+									"key": "checkin",
+									"value": "2023-04-04",
+									"type": "text"
+								},
+								{
+									"key": "checkout",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "adults",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "childs",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "infants",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "currency_original",
+									"value": "USD",
+									"type": "text"
+								},
+								{
+									"key": "currency_markup",
+									"value": "GBP",
+									"type": "text"
+								},
+								{
+									"key": "booking_data",
+									"value": "{\"ResultId\":\"cc14f549-ad40-402a-817c-53dcdf9d68eb\",\"TokenId\":\"91c5a351-3330-4921-ae8a-37b2918db100\",\"TrackingId\":\"d7ddb0cd-88e3-457d-bd7c-d62a83445778\"}",
+									"type": "text"
+								},
+								{
+									"key": "supplier",
+									"value": "tbo",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "guest",
+									"value": "[{\"traveller_type\":\"adults\",\"title\":\"Mr\",\"first_name\":\"Soft Solution\",\"last_name\":\"Solution\",\"nationality\":\"AL\",\"dob_day\":\"1\",\"dob_month\":\"1\",\"dob_year\":\"1984\",\"passport\":\"1-800-567-6868\",\"passport_day\":\"1\",\"passport_month\":\"Month\",\"passport_year\":\"2024\",\"passport_issuance_day\":\"1\",\"passport_issuance_month\":\"Month\",\"passport_issuance_year\":\"2020\"}]",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "PK",
+									"type": "text"
+								},
+								{
+									"key": "routes",
+									"value": "[[{\"img\":\"WY\",\"flight_no\":\"344\",\"airline\":\"Oman Aviation\",\"class\":\"Economy\",\"baggage\":\"30 KG\",\"cabin_baggage\":\"Included\",\"departure_airport\":\"LHE\",\"departure_time\":\"15:40\",\"arrival_airport\":\"MCT\",\"arrival_time\":\"17:45\",\"departure_date\":\"04-04-2023\",\"arrival_date\":\"04-04-2023\",\"departure_code\":\"LHE\",\"arrival_code\":\"MCT\",\"currency\":\"USD\",\"price\":\"317.35\",\"duration_time\":\"03:05:00\",\"adult_price\":\"317.35\",\"child_price\":\"317.35\",\"infant_price\":\"317.35\",\"options\":\"\",\"booking_data\":{\"ResultId\":\"116f3632-cb6f-4362-9b8e-9a1c2afc8784\",\"TokenId\":\"651ff961-c8da-4f51-ad7e-6e4f3a1902fa\",\"TrackingId\":\"dc76aff2-8fd1-4af3-a2d8-9f14f9ee9f16\"},\"redirect_url\":\"\",\"supplier\":\"tbo\",\"type\":\"oneway\"},{\"img\":\"WY\",\"flight_no\":\"611\",\"airline\":\"Oman Aviation\",\"class\":\"Economy\",\"baggage\":\"30 KG\",\"cabin_baggage\":\"Included\",\"departure_airport\":\"MCT\",\"departure_time\":\"20:10\",\"arrival_airport\":\"DXB\",\"arrival_time\":\"21:25\",\"departure_date\":\"04-04-2023\",\"arrival_date\":\"04-04-2023\",\"departure_code\":\"MCT\",\"arrival_code\":\"DXB\",\"currency\":\"USD\",\"price\":\"317.35\",\"duration_time\":\"01:15:00\",\"adult_price\":\"317.35\",\"child_price\":\"317.35\",\"infant_price\":\"317.35\",\"options\":\"\",\"booking_data\":{\"ResultId\":\"116f3632-cb6f-4362-9b8e-9a1c2afc8784\",\"TokenId\":\"651ff961-c8da-4f51-ad7e-6e4f3a1902fa\",\"TrackingId\":\"dc76aff2-8fd1-4af3-a2d8-9f14f9ee9f16\"},\"redirect_url\":\"\",\"supplier\":\"tbo\",\"type\":\"oneway\"}]]",
+									"description": "flight routes data",
+									"type": "text"
+								},
+								{
+									"key": "user_data",
+									"value": "{\"first_name\":\"Qasim\",\"last_name\":\"Hussain\",\"email\":\"compoxition@gmail.com\",\"phone\":\"3311442244\",\"address\":\"65 Commercial cavalry ground\",\"nationality\":\"US\",\"country_code\":\"US\"}",
+									"description": "booking by user",
+									"type": "text"
+								},
+								{
+									"key": "flight_type",
+									"value": "oneway",
+									"description": "oneway | return",
+									"type": "text"
+								},
+								{
+									"key": "payment_gateway",
+									"value": "paypal",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}flights/book",
+							"host": [
+								"{{api_url}}flights"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "booking_update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "booking_ref_no",
+									"value": "20230420040416",
+									"type": "text"
+								},
+								{
+									"key": "booking_status",
+									"value": "confirmed",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "paid",
+									"type": "text"
+								},
+								{
+									"key": "transaction_id",
+									"value": "20230420040416",
+									"type": "text"
+								},
+								{
+									"key": "payment_gateway",
+									"value": "paypal",
+									"type": "text"
+								},
+								{
+									"key": "transaction_desc",
+									"value": "desc",
+									"type": "text"
+								},
+								{
+									"key": "transaction_user_id",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "transaction_type",
+									"value": "purchase",
+									"type": "text"
+								},
+								{
+									"key": "transaction_amount",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "transaction_payment_gateway",
+									"value": "paypal",
+									"type": "text"
+								},
+								{
+									"key": "transaction_currency",
+									"value": "usd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}flights/booking_update",
+							"host": [
+								"{{api_url}}flights"
+							],
+							"path": [
+								"booking_update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelllation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "api_key001",
+									"type": "text"
+								},
+								{
+									"key": "booking_ref_no",
+									"value": "20230417014456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}flights/cancellation",
+							"host": [
+								"{{api_url}}flights"
+							],
+							"path": [
+								"cancellation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "hotelBooking",
+			"item": [
+				{
+					"name": "hotelLocations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}hotels_locations?city=lah",
+							"host": [
+								"{{api_url}}hotels_locations"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "lah"
+								},
+								{
+									"key": "api_key",
+									"value": "{{api_key}}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "city",
+									"value": "singapore",
+									"type": "text"
+								},
+								{
+									"key": "checkin",
+									"value": "23-06-2025",
+									"type": "text"
+								},
+								{
+									"key": "checkout",
+									"value": "24-06-2025",
+									"type": "text"
+								},
+								{
+									"key": "adults",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "childs",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "rooms",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "pk",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "usd",
+									"type": "text"
+								},
+								{
+									"key": "child_age",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "module_name",
+									"value": "hotelbeds",
+									"type": "text"
+								},
+								{
+									"key": "pagination",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "price_from",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "price_to",
+									"value": "100000",
+									"type": "text"
+								},
+								{
+									"key": "price_low_to_high",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}hotel_search",
+							"host": [
+								"{{api_url}}hotel_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hotel_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "checkin",
+									"value": "10-03-2023",
+									"type": "text"
+								},
+								{
+									"key": "checkout",
+									"value": "12-03-2023",
+									"type": "text"
+								},
+								{
+									"key": "adults",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "childs",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "child_age",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "rooms",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "en",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "usd",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "PK",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}hotel_details",
+							"host": [
+								"{{api_url}}hotel_details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hotel_booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "price_original",
+									"value": "300",
+									"type": "text"
+								},
+								{
+									"key": "price_markup",
+									"value": "340",
+									"type": "text"
+								},
+								{
+									"key": "vat",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "tax",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "gst",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Qasim",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Hussain",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "info@phptravels.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "PHPTRAVELS",
+									"type": "text"
+								},
+								{
+									"key": "phone_country_code",
+									"value": "+92",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "000-000-000",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "PAKISTAN",
+									"type": "text"
+								},
+								{
+									"key": "stars",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "hotel_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "hotel_name",
+									"value": "Golden Sands Hotel Apartments",
+									"type": "text"
+								},
+								{
+									"key": "hotel_phone",
+									"value": "000-000-000",
+									"type": "text"
+								},
+								{
+									"key": "hotel_email",
+									"value": "email@hotel.com",
+									"type": "text"
+								},
+								{
+									"key": "hotel_website",
+									"value": "www.hotel-website.com",
+									"type": "text"
+								},
+								{
+									"key": "hotel_address",
+									"value": "DUBAI",
+									"type": "text"
+								},
+								{
+									"key": "room_data",
+									"value": "[{\"id\":\"11\",\"name\":\"One Bedroom Apartment\",\"price\":\"200\",currncy\":\"USD\"}]",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "DUBAI",
+									"type": "text"
+								},
+								{
+									"key": "location_cords",
+									"value": "Golden Sands Hotel Apartments - Dubai - 10 B Street - Dubai - United Arab Emirates",
+									"type": "text"
+								},
+								{
+									"key": "hotel_img",
+									"value": "274739-28-01-2023-1674864021.jpg",
+									"type": "text"
+								},
+								{
+									"key": "checkin",
+									"value": "04-04-2023",
+									"type": "text"
+								},
+								{
+									"key": "checkout",
+									"value": "08-04-2023",
+									"type": "text"
+								},
+								{
+									"key": "adults",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "childs",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "child_ages",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "currency_original",
+									"value": "USD",
+									"type": "text"
+								},
+								{
+									"key": "currency_markup",
+									"value": "USD",
+									"type": "text"
+								},
+								{
+									"key": "booking_data",
+									"value": "{\\\"ResultId\\\":\\\"cc14f549-ad40-402a-817c-53dcdf9d68eb\\\",\\\"TokenId\\\":\\\"91c5a351-3330-4921-ae8a-37b2918db100\\\",\\\"TrackingId\\\":\\\"d7ddb0cd-88e3-457d-bd7c-d62a83445778\\\"}",
+									"type": "text"
+								},
+								{
+									"key": "supplier",
+									"value": "hotelbeds",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "guest",
+									"value": "[{\\\"traveller_type\\\":\\\"adults\\\",\\\"title\\\":\\\"Mr\\\",\\\"first_name\\\":\\\"Soft Solution\\\",\\\"last_name\\\":\\\"Solution\\\",\\\"nationality\\\":\\\"AL\\\",\\\"dob_day\\\":\\\"1\\\",\\\"dob_month\\\":\\\"1\\\",\\\"dob_year\\\":\\\"1984\\\",\\\"passport\\\":\\\"1-800-567-6868\\\",\\\"passport_day\\\":\\\"1\\\",\\\"passport_month\\\":\\\"Month\\\",\\\"passport_year\\\":\\\"2024\\\",\\\"passport_issuance_day\\\":\\\"1\\\",\\\"passport_issuance_month\\\":\\\"Month\\\",\\\"passport_issuance_year\\\":\\\"2020\\\"}]",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "pk",
+									"type": "text"
+								},
+								{
+									"key": "payment_gateway",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_data",
+									"value": "{\n    \"first_name\": \"Qasim\",\n    \"last_name\": \"Hussain\",\n    \"email\": \"compoxition@gmail.com\",\n    \"phone\": \"3311442244\",\n    \"address\": \"65 Commercial cavalry ground\",\n    \"nationality\": \"US\",\n    \"country_code\": \"US\"\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}hotel_booking",
+							"host": [
+								"{{api_url}}hotel_booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancellation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "booking_ref_no",
+									"value": "20230404114331",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}hotels_cancellation",
+							"host": [
+								"{{api_url}}hotels_cancellation"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
