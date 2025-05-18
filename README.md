@@ -57,6 +57,53 @@ An **end-to-end quality assurance project** for the **FlightSure Travel Booking 
 
 ---
 
+## 🤖 Usage of Automation Testing (Selenium - Java)
+
+To execute automation tests for FlightSure:
+
+1. **Pre-requisites:**
+   - Ensure you have Java, Maven, and a compatible IDE (like IntelliJ or Eclipse) installed.
+
+2. **Clone the Repository** and navigate to the automation project folder.
+
+3. **Run Automation Tests:**
+   ```bash
+   mvn clean test
+   
+---
+
+## 🔌 Usage of API
+
+To perform API Testing:
+
+1. **Import** all of the following into Postman:
+   - Collections
+   - Environment file
+   - Runner file
+
+2. Once imported, you can:
+   - Run the tests using the **Runner** file.
+   - View detailed **test results** and validations.
+
+✅ This setup ensures complete API test coverage for the FlightSure application.
+
+---
+
+## 📈 Usage of Performance Testing
+
+To perform performance testing using **Apache JMeter**:
+
+1. **Import** the `.jmx` file into JMeter.
+2. Configure user load, thread settings, and any required test parameters.
+3. Run the test to:
+   - Simulate traffic
+   - Measure response time
+   - Analyze performance metrics
+
+✅ You can also view detailed **performance test results** in the reports section after execution.
+
+---
+
 ## 🧰 Tech Stack & Tooling
 - `Java` • `Selenium` • `TestNG`  
 - `Postman` • `JMeter`  
