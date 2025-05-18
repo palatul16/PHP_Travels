@@ -1,0 +1,151 @@
+Test Case ID,Test Scenario Description,Test Case Description,Pre-Conditions,Steps,Test Data,Expected Output,Actual Output,Status,Comments
+TC_017,Verify tab switch on button click,"Verify that clicking the ""Flights"" button switches to the Flights tab and displays content","Homepage Url: https://phptravels.net/
+","1. Click on url from the precoditions
+2. User is on the Homepage
+3. Verify that 'Flights' Button is displayes
+4. Click on the button",N/A,"""Flights"" tab button should be clickable and switches to the flights tab",As expected,PASS,Functionality working correctly
+TC_018,Verify button highlight on active state,"Check that the ""Flights"" button is visually highlighted when active","Homepage Url: https://phptravels.net/
+","1. Click on the ""Flights"" button",N/A,"""Flights"" button is visually highlighted to show active state",As expected,PASS,Visual cue present
+TC_019,Check keyboard accessibility,"Ensure the ""Flights"" button is accessible via keyboard and responds to Enter/Space keys","Homepage Url: https://phptravels.net/
+","1. Open the url from the precondition
+2. Use Tab to navigate to ""Flights"" button
+3. Press Enter",N/A,"""Flights"" tab should activated and content displayed","""Flights"" tab is activated, but the enter key isn't working",FAIL,Keyboard accessibility not working — action not triggered
+TC_020,Validate button label,"Check that the label of the button is correctly shown as ""Flights""","Homepage Url: https://phptravels.net/
+","1. click fn+ f12 button
+2. Inspect the label of the ""Flights"" button",N/A,"Label reads ""Flights""",As expected,PASS,Label is correct
+TC_021,Check hover behavior,"Confirm that the ""Flights"" button changes appearance on hover","Homepage Url: https://phptravels.net/
+","1. Move mouse pointer over ""Flights"" button",N/A,Button changes appearance to indicate interactivity, button looks same,FAIL,Hover effect isn't present
+TC_022,Handle clicks during loading state,Ensure clicking during loading does not break UI,"Homepage Url: https://phptravels.net/
+","1. Reload the page (Ctrl+R)
+2. During loading, click on ""Hotels"" tab",N/A,UI remains stable and does not switch tabs unexpectedly," Tab should remain on ""Hotels"" even after loading completes",FAIL, User input (Hotels tab click) ignored during loading; UI auto-switches to Flights
+TC_023,"Verify visibility of ""Flying From"" dropdown","Ensure that the ""Flying From"" dropdown is visible and accessible when the Flights section is opened","Homepage Url: https://phptravels.net/
+","1. Navigate to the Flights booking section
+2. Locate the ""Flying From"" dropdown
+3. Verify its visibility",N/A,"""Flying From"" dropdown should be visible and interactable","""Flying From"" dropdown is displayed and clickable",PASS,Dropdown appeared as expected and was ready for user selection
+TC_024,"Verify clickability of ""Flying From"" dropdown","Ensure that the ""Flying From"" dropdown can be clicked and displays available options","Homepage Url: https://phptravels.net/
+","1. Navigate to the Flights section
+2. Click on the ""Flying From"" dropdown",N/A,Dropdown should be clickable and should show a list of airports or locations,Dropdown was clickable and displayed the airport list,PASS,Dropdown behaved as expected when clicked
+TC_025,"Verify available options in ""Flying From"" dropdown","Ensure that the ""Flying From"" dropdown contains the correct list of available departure cities","Homepage Url: https://phptravels.net/
+","1. Navigate to the Flights section
+2. Click on the ""Flying From"" dropdown
+3. Verify the list of available cities shown",N/A,"The dropdown should show a complete and correct list of departure cities (e.g., London United Kingdom, etc.)",The list displayed all expected cities correctly,PASS,List of departure cities matched the expected data
+TC_026,"Select a valid source in ""Flying From"" dropdown","Ensure that a valid departure city can be selected from the ""Flying From"" dropdown","Homepage Url: https://phptravels.net/
+","1. Navigate to the Flights section
+2. Click on ""Flying From"" dropdown
+3. Select a valid city (e.g., London )
+4. Verify the selection",N/A,The selected city should be highlighted/displayed as the current flying from location,London Heathrow Airport is dispaly,PASS,Valid source selection works as expected
+TC_027,Verify city search functionality in dropdown,"Ensure that typing in the ""Flying From"" dropdown filters the list of available cities","Homepage Url: https://phptravels.net/
+","1. Login to the application2. Navigate to the Flights section3. Click on the ""Flying From"" dropdown4. Type a city name (e.g., ""Del"") in the search box5. Observe the filtered results","Input = ""Del""","The dropdown should display matching cities (e.g., Delhi, Dehradun) based on input",Matching cities were filtered and shown correctly,PASS,Search function worked accurately and responsively
+TC_028,"Verify clear/reset functionality in ""Flying From"" dropdown",Ensure that selected city is cleared when the user clicks the clear or reset button,"Homepage Url: https://phptravels.net/
+","1. Login to the application2. Navigate to the Flights section3. Select a city from the ""Flying From"" dropdown4. Click the clear/reset button5. Verify the dropdown is cleared","Selected city = ""Delhi""","The ""Flying From"" dropdown should reset to its default state (e.g., no city selected or placeholder text)",Dropdown was cleared successfully and returned to default state,PASS,Clear/reset functionality worked as expected
+TC_029,Verify availability of trip type options,"Ensure that both ""One-Way"" and ""Round-Trip"" options are available for flight booking","Homepage Url: https://phptravels.net/
+","1. Login to the application2. Navigate to the Flights booking section3. Locate the trip type options4. Verify that both ""One-Way"" and ""Round-Trip"" are visible and selectable",N/A,"Both ""One-Way"" and ""Round-Trip"" options should be visible and user-selectable",Both options were visible and selectable,PASS,Trip type options displayed correctly
+TC_030,"Prevent selection of same city in both ""From"" and ""To"" fields","Ensure that the user cannot select the same city in both ""Flying From"" and ""Flying To"" dropdowns","Homepage Url: https://phptravels.net/
+","1. Login to the application2. Navigate to the Flights booking section3. Select a city in the ""Flying From"" dropdown (e.g., Delhi)4. Try selecting the same city in the ""Flying To"" dropdown","City = ""Delhi""","App should prevent selecting the same city in both fields, either by disabling the option or showing a validation message",Same city selection isn't restricted,FAIL,App correctly restricted same city selection
+TC_031,Visibility of Destination Dropdown,"Verify that the ""To"" field is visible on the Flights page","Homepage Url: https://phptravels.net/
+"," 1. Navigate to ""Flights"" tab on homepage.
+2. Observe if the ""To"" field is visible.",N/A,"""To"" field should be visible",As expected,PASS,UI field check
+TC_032,Clickability,"Verify that the ""To"" field is clickable","Homepage Url: https://phptravels.net/
+"," 1. Open browser and navigate to https://phptravels.net/.
+2. Click on the ""Flights"" tab to open the flight booking section.
+3. Locate the ""To"" input field.
+4. Click on the ""To"" input field.
+5. Observe if the dropdown list of destinations appears.
+6. Attempt to scroll or select one destination from the dropdown list.",N/A,Dropdown list should appear,Dropdown appeared successfully,PASS,-
+TC_033,Search Functionality,Search for a city in the dropdown,"Homepage Url: https://phptravels.net/
+"," 1. Open browser and navigate to https://phptravels.net/.
+2. Click on the ""Flights"" tab.
+3. Click on the ""To"" input field.
+4. Type ""Dubai"" in the ""To"" field.
+5. Observe the dropdown list filter based on typed text.
+6. Verify that ""Dubai"" appears as a selectable option.","""Dubai""",City option should appear in list," City option ""Dubai"" displayed successfully",PASS,-
+TC_034,Selection Functionality,Select a valid destination city,Homepage URL: https://phptravels.net/,"1. Open browser and navigate to https://phptravels.net/.2. Click on the ""Flights"" tab.3. Click on the ""To"" field.4. Type ""London"".5. From the dropdown list, click on ""London"".6. Verify that ""London"" is populated in the ""To"" field.",London,"""London"" should be selected and displayed in the field.","""London"" is selected and displayed correctly in the field.",PASS,-
+TC_035,Input Reset,Clear the destination field,Homepage URL: https://phptravels.net/,"1. Open browser and navigate to https://phptravels.net/.2. Click on the ""Flights"" tab.3. Click on the ""To"" input field.4. Type any city name (e.g., ""Paris"").5. Use backspace or delete keys to clear the input field.6. Verify that the ""To"" field is empty after clearing.",N/A,Field should be cleared and empty.,"""To"" field is cleared and is empty after deleting input.",PASS,-
+TC_036,Same Source and Destination,Select same city as source and destination,Homepage URL: https://phptravels.net/,"1. Open browser and navigate to https://phptravels.net/.2. Click on the ""Flights"" tab.3. Select ""Delhi"" in the ""From"" field.4. Click on the ""To"" field and select ""Delhi"".5. Verify if an error message appears or if selection is prevented.6. Confirm appropriate validation or error behavior.",Delhi,Show error message or prevent selecting same city as source and destination.,Error message is shown preventing same city selection.,PASS,Validation working
+TC_037,Invalid Text Input,"Enter invalid string in ""To"" field",Homepage URL: https://phptravels.net/,"1. Open browser and navigate to https://phptravels.net/.2. Click on the ""Flights"" tab.3. Click on the ""To"" field.4. Type an invalid string like ""zzzz123"".5. Observe the dropdown results or suggestions.6. Verify that no valid city results appear or the list is blank.",zzzz123,No results found or blank dropdown list shown.,"No matching cities found, dropdown list is empty or shows 'no results'.",PASS,-
+TC_038,Mandatory Field,Try to search without selecting destination,Homepage URL: https://phptravels.net/,"1. Open browser and navigate to https://phptravels.net/.2. Click on the ""Flights"" tab.3. Leave the ""To"" field blank.4. Click the ""Search"" button.5. Verify if a validation message appears requesting destination selection.6. Confirm that search does not proceed without destination.",N/A,Show validation message indicating destination is required.,"Validation message appears, search is blocked without destination.",PASS,-
+TC_039,Keyboard Navigation,Navigate the dropdown using keyboard,Homepage URL: https://phptravels.net/,"1. Open browser and navigate to https://phptravels.net/.2. Click on the ""Flights"" tab.3. Press Tab key until focus reaches the ""To"" field.4. Press Arrow Down key to open and navigate the dropdown list.5. Use Arrow keys (Up/Down) to move between options.6. Press Enter to select a highlighted option.7. Verify selection populates the ""To"" field.8. Confirm dropdown is fully accessible via keyboard.",N/A,Dropdown should be navigable and selectable using keyboard only.,Dropdown navigated and selection made successfully using keyboard.,PASS,A11y test
+TC_040,UI Consistency,Check field font and spacing,Homepage Url: https://phptravels.net/,1. Navigate to Flights tab.2. Observe placeholder text style.3. Observe selected city text style.4. Check spacing around input field.,N/A,Font and spacing consistent with UI standards,Font and spacing match UI guidelines,PASS,-
+TC_041,Mobile Compatibility,Test dropdown on mobile device,Homepage Url: https://phptravels.net/,1. Open website on mobile device.2. Tap on “To” field.3. Type/select “Dubai” from dropdown.4. Verify dropdown and selection behavior.,Dubai,Dropdown works normally on mobile,Dropdown functions smoothly on mobile,PASS,Responsive verified
+TC_042,Case-insensitive Search,Search city in lowercase/mixed case,Homepage Url: https://phptravels.net/,1. Click on “To” field.2. Type “dubai”.3. Clear field.4. Type “DuBaI”.5. Observe search results.,"dubai, DuBaI",“Dubai” should appear in search results,“Dubai” appears regardless of input case,PASS,-
+TC_043,Clear Option Check,Verify manual clearing works,Homepage Url: https://phptravels.net/,1. Click “To” field.2. Type a city.3. Use backspace/delete to clear input.4. Verify input field is cleared completely.,N/A,Input field is cleared successfully,Input field clears as expected,PASS,-
+TC_044,Script Injection Handling,Test HTML/script injection,Homepage Url: https://phptravels.net/,1. Click “To” field.2. Type <script>alert(1)</script>.3. Observe how input is handled.,alert(1),"Input treated as plain text, no script executes","Input is escaped, script does not execute",PASS,Security check
+TC_045,City With Special Characters,Search a city with apostrophe or hyphen,Homepage Url: https://phptravels.net/,1. Click “To” field.2. Type “St. John’s”.3. Repeat for “Coimbatore-Airport”.4. Verify dropdown suggestions.,"St. John’s, Coimbatore-Airport",Valid options appear in dropdown,Correct city suggestions are shown,PASS,Character handling
+TC_046,City With Long Name,Search and select city with long name,Homepage Url: https://phptravels.net/,1. Click “To” field.2. Type “San Francisco International Airport”.3. Observe how name displays in dropdown.,San Francisco International Airport,Full name displays or wraps correctly,Long name text wraps correctly,PASS,UI check
+TC_047,Rapid City Selection,Select multiple cities rapidly,Homepage Url: https://phptravels.net/,"1. Click “To” field.2. Quickly select “Dubai”, then “London”, then “Paris”.3. Verify only last selected city remains.","Dubai, London, Paris",Only final selection applies,Final selected city is correctly shown,PASS,No bugs/crashes
+TC_048,Repeated City Selection,Select the same destination repeatedly,Homepage Url: https://phptravels.net/,1. Click “To” field.2. Type and select “Mumbai” multiple times.3. Observe behavior after repeated selections.,Mumbai,"No duplication, stable selection",Selection remains stable without duplicates,PASS,No duplication
+TC_049,Case Insensitivity,Type city in different casing,Homepage Url: https://phptravels.net/,"1. Click “To” field.2. Type “duBaI”, then “DUBAI”.3. Observe dropdown suggestions.","duBaI, DUBAI",Matching results displayed regardless of case,Results displayed correctly,PASS,Search robustness
+TC_050,Select Then Delete Input,"Select a city, then clear it manually",Homepage Url: https://phptravels.net/,1. Select a city in “To” field.2. Use backspace/delete to clear field.3. Verify field is empty.,N/A,Field is cleared after manual deletion,Field empties correctly after clearing,PASS,Input field reset
+TC_051,Autocomplete Suggestion Navigation,Navigate suggestion list using keys,Homepage Url: https://phptravels.net/,1. Click “To” field.2. Type “Paris”.3. Use arrow keys to highlight suggestion.4. Press Enter to select highlighted city.,Paris,Highlighted city selected on Enter key,Highlighted city is selected on keyboard enter,PASS,Keyboard support
+TC_052,Field Visibility,"Verify ""Depart Date"" field is visible",Homepage Url: https://phptravels.net/,1. Navigate to Flights tab.2. Observe presence of “Depart Date” field.,N/A,Field should be visible on page,Field is visible as expected,PASS,UI presence check
+TC_053,Date Picker Opens,Clicking on field opens calendar,Homepage Url: https://phptravels.net/,1. Click on “Depart Date” field.2. Verify calendar or date picker popup opens.,N/A,Calendar opens on field click,Calendar popup opens correctly,PASS,-
+TC_054,Select Future Date,Select a valid future date,"Homepage Url: https://phptravels.net/
+",1. Select a date after today,"e.g., 10 days from now",Selected date appears,As expected,PASS,-
+TC_055,Select Far Future Date,Select a date 1 year in future,"Homepage Url: https://phptravels.net/
+",1. Navigate to future month2. Select date,12 months later,Date is selected,As expected,PASS,Calendar navigability
+TC_056,Clear Date,Manually clear selected date,"Homepage Url: https://phptravels.net/
+",1. Click field2. Press backspace,N/A,Field becomes empty,As expected,PASS,Manual clearing support
+TC_057,Change Date,Change already selected date,"Homepage Url: https://phptravels.net/
+",1. Click field2. Select a new date,New date,Field updates with new date,As expected,PASS,Editable field
+TC_058,Past Date Selection,Try selecting a past date,"Homepage Url: https://phptravels.net/
+",1. Navigate to a past month2. Try selecting past date,3 days ago,Date should be disabled/unselectable,Disabled,PASS,Prevent back-dating
+TC_059,Blank Date Submission,Submit form without selecting date,"Homepage Url: https://phptravels.net/
+",1. Leave Depart Date blank2. Click Search,N/A,Show validation error,Error shown,PASS,Required field
+TC_060,Invalid Text Input,Type random text manually,"Homepage Url: https://phptravels.net/
+",1. Enter “abcd” or “99/99/9999”,Invalid strings,Field should not accept or validate,Validation fails,PASS,Input validation check
+TC_061,Script Injection,Enter <script> in field,"Homepage Url: https://phptravels.net/
+",1. Enter <script>alert(1)</script>,Script,Treated as plain text or blocked,No execution,PASS,Security test
+TC_062,Selecting Unavailable Dates,Select greyed-out or unavailable date,"Homepage Url: https://phptravels.net/
+",1. Try selecting a disabled greyed-out date,Unavailable dates,Should not be selectable,Not selected,PASS,Control invalid ranges
+TC_063,End of Month Transition,Select last day of the month,"Homepage Url: https://phptravels.net/
+",1. Navigate to last date of current month,30th or 31st,Valid selection,As expected,PASS,Boundary check
+TC_064,Leap Year Handling,Select Feb 29 on leap year,"Homepage Url: https://phptravels.net/
+",1. Navigate to Feb 20282. Select 29,"Feb 29, 2028",Date selectable,As expected,PASS,Date library handling
+TC_065,Keyboard Navigation,Use keyboard to navigate calendar,"Homepage Url: https://phptravels.net/
+",1. Press Tab/Arrow keys to change date,N/A,Date changes accordingly,As expected,PASS,Accessibility check
+TC_066,Multiple Clicks,Select date multiple times quickly,"Homepage Url: https://phptravels.net/
+",1. Click multiple dates rapidly,Any valid dates,Only one final date selected,As expected,PASS,No crash/glitch
+TC_067,Mobile Responsiveness,Open calendar on mobile screen,"Homepage Url: https://phptravels.net/
+",1. Tap date field,N/A,Responsive calendar shown,As expected,PASS,Responsive UI test
+TC_068,Dropdown visibility,"Verify ""Travellers"" field is visible on Flights form","Homepage Url: https://phptravels.net/
+","Locate the ""Travellers"" dropdown",N/A,"""Travellers"" field is visible",As expected,PASS,UI field check
+TC_069,Dropdown click action,"Verify clicking on ""Travellers"" opens dropdown","Homepage Url: https://phptravels.net/
+","Click on ""Travellers"" field",N/A,"Dropdown opens showing Adult, Child, Infant",As expected,PASS,Functional
+TC_070,Default values,Check default values in dropdown,"Homepage Url: https://phptravels.net/
+",Observe values,N/A,"Adult = 1, Child = 0, Infant = 0",As expected,PASS,Functional
+TC_071,Increase Adult count,"Add an adult using ""+"" button","Homepage Url: https://phptravels.net/
+","Click ""+"" on Adult",1,Adult count increases by 1,As expected,PASS,Functional
+TC_072,Decrease Adult count,"Decrease adult using ""–"" button","Homepage Url: https://phptravels.net/
+","Click ""–"" on Adult",–1,Adult count decreases by 1,As expected,PASS,Functional
+TC_073,Increase Child count,"Add a child using ""+"" button","Homepage Url: https://phptravels.net/
+","Click ""+"" on Child",1,Child count increases by 1,As expected,PASS,Functional
+TC_074,Decrease Child count,"Decrease child using ""–"" button","Homepage Url: https://phptravels.net/
+","Click ""–"" on Child",–1,Child count decreases by 1,As expected,PASS,Functional
+TC_075,Increase Infant count,"Add an infant using ""+"" button","Homepage Url: https://phptravels.net/
+","Click ""+"" on Infant",1,Infant count increases by 1,As expected,PASS,Functional
+TC_076,Decrease Infant count,"Decrease infant using ""–"" button","Homepage Url: https://phptravels.net/
+","Click ""–"" on Infant",–1,Infant count decreases by 1,As expected,PASS,Functional
+TC_077,Count summary update,"Check if summary updates in ""Travellers"" field","Homepage Url: https://phptravels.net/
+",Observe field label,"2 Adults, 1 Child","Label updates as ""3 Travellers, 1 Child""",As expected,PASS,Functional
+TC_078,Form reflects traveller data,Check if total travellers reflect in flight search,"Homepage Url: https://phptravels.net/
+","Add 2 Adults, 1 Child",3 Travellers,Search results reflect traveller data,As expected,PASS,Functional
+TC_079,Visibility,"Verify that the ""Search"" button is visible","Homepage Url: https://phptravels.net/
+","Locate the ""Search"" button",N/A,Button should be visible on screen,As expected,PASS,UI test
+TC_080,Button Label,Verify the text on the button,"Homepage Url: https://phptravels.net/
+",Read the button label,N/A,"Label should say ""Search""",As expected,PASS,Content check
+TC_081,Clickability,Verify button is clickable,"Homepage Url: https://phptravels.net/
+","Click on ""Search""",N/A,Button should respond to click,As expected,PASS,Functional
+TC_082,Valid Input,Trigger search with all valid inputs,"Homepage Url: https://phptravels.net/
+","Click ""Search""","Valid city pair, date",Redirects to search results page,As expected,PASS,Main functional flow
+TC_083,Missing Destination,"Search with missing ""To"" field","Homepage Url: https://phptravels.net/
+","Click ""Search""",Missing destination,Error or validation message,As expected,PASS,Field validation
+TC_084,Missing From,"Search with missing ""From"" field","Homepage Url: https://phptravels.net/
+","Click ""Search""",Missing origin,Error or validation message,As expected,PASS,Field validation
+TC_085,Missing Dates,Search with missing departure date,"Homepage Url: https://phptravels.net/
+","Click ""Search""",Blank date,Error or alert shown,As expected,PASS,Functional
+TC_086,Button Disabled (Optional),Button remains disabled if required fields are empty,"Homepage Url: https://phptravels.net/
+","Try to click ""Search""",Empty form,Button not clickable or warning shown,As expected,PASS,UX behavior check
+TC_087,Response Time,Measure how quickly the search page loads,"Homepage Url: https://phptravels.net/
+","Click ""Search""",N/A,Results load within 5–7 seconds,As expected,PASS,Performance
+TC_088,Field Reset,Ensure previous values remain after clicking back,"Homepage Url: https://phptravels.net/
+",Click browser back,Previously entered data,Fields retain previous input,As expected,PASS,Usability

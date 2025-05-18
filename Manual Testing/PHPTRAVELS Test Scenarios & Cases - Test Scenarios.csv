@@ -1,0 +1,17 @@
+Project Name,PHPTravels,,
+Team Name,The Debuggin Knights,,
+Client,Masai,,
+Creation By,Sanjay Jatav,,
+Creation Date,17-May-2025,,
+Approval By,Pooja Yadav,,
+Approval Data,-,,
+Browser Name,Chrome,,
+Browser Version,134.0.6998.90,,
+Operating System,Window,,
+,,,
+Test Scenario ID,Test Scenario Description,Priority,Number of Test Cases
+TS_001,"Verify full flight booking flow: login → click logo → select ""Flights"" → search → select → add details → payment",High,72
+TS_002,"Verify full hotel booking flow: login → click logo → select ""Hotels"" → search → select → add details → payment",High,60
+TS_003,Verify the login functionality,High,16
+TS_004,Verify payment functionality,High,28
+TOTAL TEST CASES,,,177
