@@ -9,7 +9,7 @@ An **end-to-end quality assurance project** for the **FlightSure Travel Booking 
 
 ---
 
-## 👨‍💻 Project Team
+## 👨‍💻 Team - The Debugging Knights
 
 | Name            | Role                   | GitHub                                          | LinkedIn                                                                 |
 |-----------------|------------------------|--------------------------------------------------|--------------------------------------------------------------------------|
